@@ -1,24 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import MovieCard from './MovieCard'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Modify <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <MovieCard title="Batman" type="movie" posterUrl="https://m.media-amazon.com/images/I/81az0oR6izL._AC_.jpg" />
+      <MovieCard title="Superman" type="movie" posterUrl="https://m.media-amazon.com/images/I/71dScHBvL-L._AC_SS450_.jpg" />
+      <MovieCard title="Spiderman" type="movie" posterUrl="https://m.media-amazon.com/images/I/61-rozyeQQL._AC_SY679_.jpg" />
+    </>
   );
 }
 
